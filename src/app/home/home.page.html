@@ -1,71 +1,32 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true"> <!--  -->
   
-  <ion-grid>
-    <ion-row>
+  <ion-row class="ion-justify-content-center"> <!-- ion-justify-content-center = usado em row -->
+    <ion-col size="10" size-lg="6" class="ion-text-center full-height"> <!-- size-lg = para desktop | ion-text-center = usado em col -->
 
-      <ion-col size="4">
-        <div class="imagem">
-          <img src="" alt="">
-        </div>
-      </ion-col>
+        <!-- Formulário de Login -->
+        <ion-row>
+            <ion-col size="12">
+                <ion-card>
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="400px">
+                    <ion-card-content>
+                        <ion-item>
+                            <ion-input label="Usuário"></ion-input>
+                        </ion-item>
+        
+                        <ion-item>
+                            <ion-input label="Senha"></ion-input>
+                        </ion-item>
+        
+                        <ion-button routerLink="/main-page">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            &nbsp; Acessar
+                        </ion-button>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
 
-      <ion-col size="8">
-        <div class="teste">
-          <h2>Juvenildo da Silva</h2>
-          <p>Gerente</p>
-
-          <div class="botoes">
-            <div class="btn">
-              <button>seguir</button>
-            </div>
-
-            <div class="btn">
-              <button>mensagem</button>
-            </div>
-          </div>
-        </div>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col size="4">
-        <div>
-          <strong>45.9K</strong>
-          <p>Curtidas</p>
-        </div>
-      </ion-col>
-
-      <ion-col size="4">
-        <div>
-          <strong>45.9K</strong>
-          <p>Curtidas</p>
-        </div>
-      </ion-col>
-
-      <ion-col size="4">
-        <div>
-          <strong>45.9K</strong>
-          <p>Curtidas</p>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-grid>
-    <ion-row>
-      <div>
-        <h2>Sobre</h2>
-        <p>Pessoa inteligente e extrovertida, gosta de jogar de minecraft e CSGO, estudar programação nas horas vagas.</p>
-      </div>
-    </ion-row>
-  </ion-grid>
-
-  <ion-grid>
-    <ion-row>
-      <div>
-        <h2>Postagens de Amigos</h2>
-      </div>
-    </ion-row>
-  </ion-grid>
+    </ion-col> 
+  </ion-row>
 
 </ion-content>

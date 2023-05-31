@@ -1,30 +1,12 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-content{
+    --background: rgb(32,116,122);
+    --background: linear-gradient(90deg, rgba(32,116,122,1) 25%, rgba(0,255,218,1) 100%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.full-height{
+    height: 100vh;
+    overflow: hidden; // Para n ter barra de rolagem(scrool)
+    display: flex; 
+    align-items: center; // Para alinhar ao centro verticalmente
+    justify-content: center; // Para alinhar ao centro horizontalmente
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-
-.sobre{}
